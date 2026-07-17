@@ -115,6 +115,14 @@
     background:var(--bg);border:1px solid var(--border);border-radius:9999px;padding:6px 12px;}
   @media(max-width:820px){.pcard{padding:20px 18px;}}
 
+  /* BEFORE / AFTER */
+  .ba{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start;}
+  .ba figure{margin:0;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface);}
+  .ba figcaption{font-family:var(--mono);font-weight:600;font-size:10px;letter-spacing:0.09em;text-transform:uppercase;padding:8px 12px;}
+  .ba .fore figcaption{color:var(--muted);background:var(--bg-alt);}
+  .ba .efter figcaption{color:var(--cloth-tx);background:var(--cloth-bg);}
+  .ba img{width:100%;display:block;background:#0d0d0f;}
+
   /* CTA */
   .cta{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:56px 48px;text-align:center;}
   .cta h2{font-size:clamp(25px,3.3vw,35px);}
@@ -276,6 +284,10 @@
             <div class="pmeta"><span>Ladda upp 1 porträtt</span><span>Fyll i 5 fält</span></div>
           </div>
         </div>
+        <div class="ba reveal">
+          <figure class="fore"><figcaption>Före</figcaption><img src="images/fotbollskort-fore.jpg" alt="Före: vanligt porträttfoto"></figure>
+          <figure class="efter"><figcaption>Efter</figcaption><img src="images/fotbollskort-efter.jpg" alt="Efter: Panini-fotbollskort i VM-stil"></figure>
+        </div>
         <div class="fillin">
           <div class="ft">Byt ut det här</div>
           <ul>
@@ -301,6 +313,10 @@
             <p class="pdesc">Porträtt blir en glansig 3D-figur i Pixar-stil.</p>
             <div class="pmeta"><span>Ladda upp 1 porträtt</span><span>Inget att fylla i</span></div>
           </div>
+        </div>
+        <div class="ba reveal">
+          <figure class="fore"><figcaption>Före</figcaption><img src="images/3d-figur-fore.jpg" alt="Före: vanligt foto"></figure>
+          <figure class="efter"><figcaption>Efter</figcaption><img src="images/3d-figur-efter.jpg" alt="Efter: glansig 3D-figur i Pixar-stil"></figure>
         </div>
         <div class="prompt">
           <div class="prompt-bar"><span class="lbl">Prompt · klistra in med din bild</span><button class="prompt-copy" type="button">Kopiera</button></div>
@@ -343,6 +359,10 @@
             <div class="pmeta"><span>Ladda upp 1 ansiktsfoto</span><span>Inget att fylla i</span></div>
           </div>
         </div>
+        <div class="ba reveal">
+          <figure class="fore"><figcaption>Före</figcaption><img src="images/proffs-fore.jpg" alt="Före: vardagsselfie"></figure>
+          <figure class="efter"><figcaption>Efter</figcaption><img src="images/proffs-efter.jpg" alt="Efter: dramatiskt studioporträtt"></figure>
+        </div>
         <div class="prompt">
           <div class="prompt-bar"><span class="lbl">Prompt · klistra in med din bild</span><button class="prompt-copy" type="button">Kopiera</button></div>
           <pre>Reference Face :
@@ -363,6 +383,10 @@ Aspect ratio 2:3 vertical (Pinterest). 4K quality. 85mm portrait look, shallow d
             <p class="pdesc">Behåller rummet exakt och trycker in gigantiska folieballonger.</p>
             <div class="pmeta"><span>Ladda upp 1 foto på en plats</span><span>Fyll i texten</span></div>
           </div>
+        </div>
+        <div class="ba reveal">
+          <figure class="fore"><figcaption>Före</figcaption><img src="images/ballonger-fore.jpg" alt="Före: foto på en plats"></figure>
+          <figure class="efter"><figcaption>Efter</figcaption><img src="images/ballonger-efter.jpg" alt="Efter: platsen fylld med gigantiska folieballonger"></figure>
         </div>
         <div class="fillin">
           <div class="ft">Byt ut det här</div>
@@ -389,6 +413,10 @@ The individual inflatable balloons aggressively fill and overcrowd the space, pr
             <div class="pmeta"><span>Ladda upp 1 foto (person + miljö)</span><span>Klistra in hela blocket</span></div>
           </div>
         </div>
+        <div class="ba reveal">
+          <figure class="fore"><figcaption>Före</figcaption><img src="images/minecraft-fore.jpg" alt="Före: foto med person och miljö"></figure>
+          <figure class="efter"><figcaption>Efter</figcaption><img src="images/minecraft-efter.jpg" alt="Efter: miljön omgjord till Minecraft-kuber, personen kvar"></figure>
+        </div>
         <div class="prompt">
           <div class="prompt-bar"><span class="lbl">Prompt · klistra in med din bild</span><button class="prompt-copy" type="button">Kopiera</button></div>
           <pre>{ "task": "image_transformation", "style": { "overall_aesthetic": "High-quality cinematic Minecraft screenshot.", "rendering_technique": "Mixed-media: Photorealistic subject embedded in a voxel-based environment." }, "subject_rules": { "main_subject": "The human person from the reference image must remain completely photorealistic and unchanged. No pixelation or block filters on their body, clothing, or face.", "interacting_objects": "CRITICAL: Any non-human object in direct physical contact with the subject e.g. or nearby pets dogs MUST be converted into Minecraft block models or mobs. A real dog becomes a Minecraft wolf." }, "environment_rules": { "background_analysis": "Analyze the reference image background structure and recreate it entirely out of Minecraft voxel blocks.", "elements": "Trees, terrain, paths, and foliage must be cubic blocks with pixel art textures.", "atmosphere": "Replicate the foggy forest atmosphere using blocky volumetric fog layers appropriate for Minecraft." }, "composition_and_lighting": { "camera": "Maintain the exact camera angle and framing from the reference photo.", "lighting": "Minecraft daylight with gentle haze and consistent block-based shadows." } }
@@ -405,6 +433,10 @@ enhance</pre>
             <p class="pdesc">Enkel produktbild blir studioreklam med ingredienserna runt omkring.</p>
             <div class="pmeta"><span>Ladda upp 1 produktbild</span><span>Inget att fylla i</span></div>
           </div>
+        </div>
+        <div class="ba reveal">
+          <figure class="fore"><figcaption>Före</figcaption><img src="images/produkt-fore.jpg" alt="Före: enkel produktbild"></figure>
+          <figure class="efter"><figcaption>Efter</figcaption><img src="images/produkt-efter.jpg" alt="Efter: studioreklam med ingredienser runt omkring"></figure>
         </div>
         <div class="prompt">
           <div class="prompt-bar"><span class="lbl">Prompt · klistra in med din bild</span><button class="prompt-copy" type="button">Kopiera</button></div>
@@ -444,6 +476,10 @@ enhance</pre>
             <p class="pdesc">Din selfie blir en bild där du står bredvid en kändis.</p>
             <div class="pmeta"><span>Ladda upp 1 porträtt av dig</span><span>Fyll i 4 fält</span></div>
           </div>
+        </div>
+        <div class="ba reveal">
+          <figure class="fore"><figcaption>Före</figcaption><img src="images/kandisselfie-fore.jpg" alt="Före: porträtt av dig"></figure>
+          <figure class="efter"><figcaption>Efter</figcaption><img src="images/kandisselfie-efter.jpg" alt="Efter: selfie bredvid en kändis"></figure>
         </div>
         <div class="fillin">
           <div class="ft">Byt ut det här</div>
